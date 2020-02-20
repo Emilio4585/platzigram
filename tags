@@ -1,0 +1,194 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	platzigram/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	v
+AUTH_PASSWORD_VALIDATORS	platzigram/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+BASE_DIR	platzigram/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	v
+CreatePostView	posts/views.py	/^class CreatePostView(LoginRequiredMixin, CreateView):$/;"	c
+CreatePostView2	posts/views.py	/^class CreatePostView2(LoginRequiredMixin, CreateView):$/;"	c
+DATABASES	platzigram/settings.py	/^DATABASES = {$/;"	v
+DEBUG	platzigram/settings.py	/^DEBUG = True$/;"	v
+INSTALLED_APPS	platzigram/settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	platzigram/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+LOGIN_REDIRECT_URL	platzigram/settings.py	/^LOGIN_REDIRECT_URL = '\/'$/;"	v
+LOGIN_URL	platzigram/settings.py	/^LOGIN_URL = '\/users\/login\/'$/;"	v
+LOGOUT_REDIRECT_URL	platzigram/settings.py	/^LOGOUT_REDIRECT_URL = '\/users\/login\/'/;"	v
+LoginView	users/views.py	/^class LoginView(auth_views.LoginView):$/;"	c
+LogoutView	users/views.py	/^class LogoutView(LoginRequiredMixin, auth_views.LogoutView):$/;"	c
+MEDIA_ROOT	platzigram/settings.py	/^MEDIA_ROOT = os.path.join(BASE_DIR, 'media')$/;"	v
+MEDIA_URL	platzigram/settings.py	/^MEDIA_URL = '\/media\/'$/;"	v
+MIDDLEWARE	platzigram/settings.py	/^MIDDLEWARE = [$/;"	v
+Meta	posts/forms.py	/^	class Meta:$/;"	c	class:PostForm
+Migration	posts/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	users/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Post	posts/models.py	/^class Post(models.Model):$/;"	c
+PostAdmin	posts/admin.py	/^class PostAdmin(admin.ModelAdmin):$/;"	c
+PostDetailView	posts/views.py	/^class PostDetailView(DetailView):$/;"	c
+PostFeedView	posts/views.py	/^class PostFeedView(ListView):$/;"	c
+PostForm	posts/forms.py	/^class PostForm(forms.ModelForm):$/;"	c
+PostsConfig	posts/apps.py	/^class PostsConfig(AppConfig):$/;"	c
+Profile	users/models.py	/^class Profile(models.Model):$/;"	c
+ProfileAdmin	users/admin.py	/^class ProfileAdmin(admin.ModelAdmin):$/;"	c
+ProfileCompletionMiddleware	platzigram/middleware.py	/^class ProfileCompletionMiddleware:$/;"	c
+ProfileInline	users/admin.py	/^class ProfileInline(admin.StackedInline):$/;"	c
+ROOT_URLCONF	platzigram/settings.py	/^ROOT_URLCONF = 'platzigram.urls'$/;"	v
+SECRET_KEY	platzigram/settings.py	/^SECRET_KEY = ')p8c2g4laxvl(lg@z-r&6*t3^2@#7(bkrd0szmv&mh%82ea56i'$/;"	v
+STATICFILES_DIRS	platzigram/settings.py	/^STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )$/;"	v
+STATICFILES_FINDERS	platzigram/settings.py	/^STATICFILES_FINDERS = [$/;"	v
+STATIC_URL	platzigram/settings.py	/^STATIC_URL = '\/static\/'$/;"	v
+SignupForm	users/forms.py	/^class SignupForm(forms.Form):$/;"	c
+SignupView	users/views.py	/^class SignupView(FormView):$/;"	c
+TEMPLATES	platzigram/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	platzigram/settings.py	/^TIME_ZONE = 'UTC'$/;"	v
+USE_I18N	platzigram/settings.py	/^USE_I18N = True$/;"	v
+USE_L10N	platzigram/settings.py	/^USE_L10N = True$/;"	v
+USE_TZ	platzigram/settings.py	/^USE_TZ = True$/;"	v
+UpdateProfileView	users/views.py	/^class UpdateProfileView(LoginRequiredMixin, UpdateView):$/;"	c
+UserAdmin	users/admin.py	/^class UserAdmin(BaseUserAdmin):$/;"	c
+UserDetailView	users/views.py	/^class UserDetailView(DetailView):$/;"	c
+UsersConfig	users/apps.py	/^class UsersConfig(AppConfig):$/;"	c
+WSGI_APPLICATION	platzigram/settings.py	/^WSGI_APPLICATION = 'platzigram.wsgi.application'$/;"	v
+__call__	platzigram/middleware.py	/^    def __call__(self, request):$/;"	m	class:ProfileCompletionMiddleware	file:
+__init__	platzigram/middleware.py	/^    def __init__(self, get_response):$/;"	m	class:ProfileCompletionMiddleware
+__str__	posts/models.py	/^    def __str__(self):$/;"	m	class:Post	file:
+__str__	users/models.py	/^    def __str__(self):$/;"	m	class:Profile	file:
+application	platzigram/wsgi.py	/^application = get_wsgi_application()$/;"	v
+biography	users/models.py	/^    biography = models.TextField(blank=True)$/;"	v	class:Profile
+blank	users/models.py	/^        blank=True,$/;"	v	class:Profile
+can_delete	users/admin.py	/^        can_delete = False$/;"	v	class:ProfileInline
+clean	users/forms.py	/^    def clean(self):$/;"	m	class:SignupForm
+clean_username	users/forms.py	/^    def clean_username(self):$/;"	m	class:SignupForm
+context_object_name	posts/views.py	/^    context_object_name = 'form'$/;"	v	class:CreatePostView
+context_object_name	posts/views.py	/^    context_object_name = 'form'$/;"	v	class:CreatePostView2
+context_object_name	posts/views.py	/^    context_object_name = 'post'$/;"	v	class:PostDetailView
+context_object_name	posts/views.py	/^    context_object_name = 'posts'$/;"	v	class:PostFeedView
+context_object_name	users/views.py	/^    context_object_name = 'user'$/;"	v	class:UserDetailView
+created	posts/models.py	/^    created = models.DateTimeField(auto_now_add=True)$/;"	v	class:Post
+created	users/models.py	/^    created = models.DateTimeField(auto_now_add=True)$/;"	v	class:Profile
+dependencies	posts/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	users/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+email	users/forms.py	/^    email = forms.CharField($/;"	v	class:SignupForm
+fields	posts/forms.py	/^		fields = ('profile', 'title', 'photo')/;"	v	class:PostForm.Meta
+fields	posts/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	users/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+fields	users/views.py	/^    fields = ['website', 'biography', 'phone_number', 'picture']$/;"	v	class:UpdateProfileView
+fieldsets	users/admin.py	/^    fieldsets = ($/;"	v	class:ProfileAdmin
+first_name	users/forms.py	/^    first_name = forms.CharField($/;"	v	class:SignupForm
+form_class	posts/views.py	/^    form_class = PostForm$/;"	v	class:CreatePostView
+form_class	posts/views.py	/^    form_class = PostForm$/;"	v	class:CreatePostView2
+form_class	users/views.py	/^    form_class = SignupForm$/;"	v	class:SignupView
+form_valid	users/views.py	/^    def form_valid(self, form):$/;"	m	class:SignupView
+get_context_data	posts/views.py	/^    def get_context_data(self, **kwargs):$/;"	m	class:CreatePostView
+get_context_data	posts/views.py	/^    def get_context_data(self, **kwargs):$/;"	m	class:CreatePostView2
+get_context_data	users/views.py	/^    def get_context_data(self, **kwargs):$/;"	m	class:UserDetailView
+get_object	users/views.py	/^    def get_object(self):$/;"	m	class:UpdateProfileView
+get_success_url	users/views.py	/^    def get_success_url(self):$/;"	m	class:UpdateProfileView
+initial	posts/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+initial	users/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+inlines	users/admin.py	/^    inlines = (ProfileInline, )$/;"	v	class:UserAdmin
+last_name	users/forms.py	/^    last_name = forms.CharField($/;"	v	class:SignupForm
+list_display	posts/admin.py	/^    list_display = ('__str__', 'title', 'photo', 'created', 'modified')$/;"	v	class:PostAdmin
+list_display	users/admin.py	/^    list_display = ($/;"	v	class:UserAdmin
+list_display	users/admin.py	/^    list_display = ('pk', 'user', 'phone_number', 'website', 'picture')$/;"	v	class:ProfileAdmin
+list_display_links	users/admin.py	/^    list_display_links = ('pk', 'user')$/;"	v	class:ProfileAdmin
+list_editable	posts/admin.py	/^    list_editable = ('title', 'photo')$/;"	v	class:PostAdmin
+list_editable	users/admin.py	/^    list_editable = ('phone_number', 'website', 'picture')$/;"	v	class:ProfileAdmin
+list_filter	posts/admin.py	/^    list_filter = ($/;"	v	class:PostAdmin
+list_filter	users/admin.py	/^    list_filter = ($/;"	v	class:ProfileAdmin
+max_length	users/forms.py	/^        max_length=50,$/;"	v	class:SignupForm
+max_length	users/forms.py	/^        max_length=70,$/;"	v	class:SignupForm
+min_length	users/forms.py	/^        min_length=2,$/;"	v	class:SignupForm
+min_length	users/forms.py	/^        min_length=5,$/;"	v	class:SignupForm
+min_length	users/forms.py	/^        min_length=7,$/;"	v	class:SignupForm
+min_length	users/forms.py	/^        min_length=8,$/;"	v	class:SignupForm
+model	posts/forms.py	/^		model = Post$/;"	v	class:PostForm.Meta
+model	posts/views.py	/^    model = Post$/;"	v	class:PostFeedView
+model	users/admin.py	/^        model = Profile$/;"	v	class:ProfileInline
+model	users/views.py	/^    model = Profile$/;"	v	class:UpdateProfileView
+modified	posts/models.py	/^    modified = models.DateTimeField(auto_now=True)$/;"	v	class:Post
+modified	users/models.py	/^    modified = models.DateTimeField(auto_now=True)$/;"	v	class:Profile
+name	posts/apps.py	/^    name = 'posts'$/;"	v	class:PostsConfig
+name	posts/migrations/0001_initial.py	/^            name='Post',$/;"	v	class:Migration
+name	posts/urls.py	/^        name='create_post_buy'$/;"	v
+name	posts/urls.py	/^        name='create_post_sell'$/;"	v
+name	posts/urls.py	/^        name='detail'$/;"	v
+name	posts/urls.py	/^        name='feed'$/;"	v
+name	users/apps.py	/^    name = 'users'$/;"	v	class:UsersConfig
+name	users/migrations/0001_initial.py	/^            name='Profile',$/;"	v	class:Migration
+name	users/urls.py	/^        name='detail'$/;"	v
+name	users/urls.py	/^        name='login'$/;"	v
+name	users/urls.py	/^        name='logout'$/;"	v
+name	users/urls.py	/^        name='signup'$/;"	v
+name	users/urls.py	/^        name='update_profile'$/;"	v
+null	users/models.py	/^        null=True$/;"	v	class:Profile
+operations	posts/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	users/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+ordering	posts/views.py	/^    ordering = ('-created',)$/;"	v	class:PostFeedView
+paginate_by	posts/views.py	/^    paginate_by = 4$/;"	v	class:PostFeedView
+password	users/forms.py	/^    password = forms.CharField($/;"	v	class:SignupForm
+password_confirmation	users/forms.py	/^    password_confirmation = forms.CharField($/;"	v	class:SignupForm
+phone_number	users/models.py	/^    phone_number = models.CharField(max_length=20, blank=True)$/;"	v	class:Profile
+photo	posts/models.py	/^    photo = models.ImageField(upload_to='posts\/photos')$/;"	v	class:Post
+picture	users/models.py	/^    picture = models.ImageField($/;"	v	class:Profile
+profile	posts/models.py	/^    profile = models.ForeignKey(Profile, on_delete=models.CASCADE)$/;"	v	class:Post
+queryset	posts/views.py	/^    queryset = Post.objects.all()$/;"	v	class:PostDetailView
+queryset	users/views.py	/^    queryset = User.objects.all()$/;"	v	class:UserDetailView
+readonly_fields	posts/admin.py	/^    readonly_fields = ('created', 'modified')$/;"	v	class:PostAdmin
+readonly_fields	users/admin.py	/^    readonly_fields = ('created', 'modified')$/;"	v	class:ProfileAdmin
+redirect_authenticated_user	users/views.py	/^    redirect_authenticated_user = True #ed$/;"	v	class:LoginView
+route	posts/urls.py	/^        route='',$/;"	v
+route	posts/urls.py	/^        route='posts\/<int:post_id>\/',$/;"	v
+route	posts/urls.py	/^        route='posts\/new\/buy',$/;"	v
+route	posts/urls.py	/^        route='posts\/new\/sell',$/;"	v
+route	users/urls.py	/^        route='<str:username_slug>\/',$/;"	v
+route	users/urls.py	/^        route='login\/',$/;"	v
+route	users/urls.py	/^        route='logout\/',$/;"	v
+route	users/urls.py	/^        route='me\/profile\/',$/;"	v
+route	users/urls.py	/^        route='signup\/',$/;"	v
+save	users/forms.py	/^    def save(self):$/;"	m	class:SignupForm
+search_fields	posts/admin.py	/^    search_fields = ($/;"	v	class:PostAdmin
+search_fields	users/admin.py	/^    search_fields = ($/;"	v	class:ProfileAdmin
+slug_field	posts/views.py	/^    slug_field = 'id'$/;"	v	class:PostDetailView
+slug_field	users/views.py	/^    slug_field = 'username'$/;"	v	class:UserDetailView
+slug_url_kwarg	posts/views.py	/^    slug_url_kwarg = 'post_id'$/;"	v	class:PostDetailView
+slug_url_kwarg	users/views.py	/^    slug_url_kwarg = 'username_slug'$/;"	v	class:UserDetailView
+success_url	posts/views.py	/^    success_url = reverse_lazy('posts:feed')$/;"	v	class:CreatePostView
+success_url	posts/views.py	/^    success_url = reverse_lazy('posts:feed')$/;"	v	class:CreatePostView2
+success_url	users/views.py	/^    success_url = reverse_lazy('users:login')$/;"	v	class:SignupView
+template_name	posts/views.py	/^    template_name = 'posts\/detail.html'$/;"	v	class:PostDetailView
+template_name	posts/views.py	/^    template_name = 'posts\/feed.html'$/;"	v	class:PostFeedView
+template_name	posts/views.py	/^    template_name = 'posts\/new-buy.html'$/;"	v	class:CreatePostView
+template_name	posts/views.py	/^    template_name = 'posts\/new-sell.html'$/;"	v	class:CreatePostView2
+template_name	users/views.py	/^    template_name = 'users\/detail.html'$/;"	v	class:UserDetailView
+template_name	users/views.py	/^    template_name = 'users\/login.html'$/;"	v	class:LoginView
+template_name	users/views.py	/^    template_name = 'users\/signup.html'$/;"	v	class:SignupView
+template_name	users/views.py	/^    template_name = 'users\/update_profile.html'$/;"	v	class:UpdateProfileView
+title	posts/models.py	/^    title = models.CharField(max_length=255)$/;"	v	class:Post
+upload_to	users/models.py	/^        upload_to='users\/pictures',$/;"	v	class:Profile
+urlpatterns	platzigram/urls.py	/^urlpatterns = [$/;"	v
+urlpatterns	posts/urls.py	/^urlpatterns = [$/;"	v
+urlpatterns	users/urls.py	/^urlpatterns = [$/;"	v
+user	users/models.py	/^    user = models.OneToOneField(User, on_delete=models.CASCADE)$/;"	v	class:Profile
+username	users/forms.py	/^    username = forms.CharField($/;"	v	class:SignupForm
+verbose_name	posts/apps.py	/^    verbose_name = 'Posts'$/;"	v	class:PostsConfig
+verbose_name	users/apps.py	/^    verbose_name= 'Users'$/;"	v	class:UsersConfig
+verbose_name_plural	users/admin.py	/^        verbose_name_plural = 'profiles'$/;"	v	class:ProfileInline
+view	posts/urls.py	/^        view=login_required(views.PostDetailView.as_view()),$/;"	v
+view	posts/urls.py	/^        view=login_required(views.PostFeedView.as_view()),$/;"	v
+view	posts/urls.py	/^        view=views.CreatePostView.as_view(),$/;"	v
+view	posts/urls.py	/^        view=views.CreatePostView2.as_view(),$/;"	v
+view	users/urls.py	/^        view=login_required(views.UserDetailView.as_view()),$/;"	v
+view	users/urls.py	/^        view=views.LoginView.as_view(),$/;"	v
+view	users/urls.py	/^        view=views.LogoutView.as_view(),$/;"	v
+view	users/urls.py	/^        view=views.SignupView.as_view(),$/;"	v
+view	users/urls.py	/^        view=views.UpdateProfileView.as_view(),$/;"	v
+website	users/models.py	/^    website = models.URLField(max_length=200, blank=True)$/;"	v	class:Profile
+widget	users/forms.py	/^        widget=forms.EmailInput(attrs={'placeholder': 'Email','class': 'form-control'})$/;"	v	class:SignupForm
+widget	users/forms.py	/^        widget=forms.PasswordInput(attrs={'placeholder': 'Password Confirmation','class': 'form-control'})$/;"	v	class:SignupForm
+widget	users/forms.py	/^        widget=forms.PasswordInput(attrs={'placeholder': 'Password','class': 'form-control'})$/;"	v	class:SignupForm
+widget	users/forms.py	/^        widget=forms.TextInput(attrs={'placeholder': 'First name','class': 'form-control'})$/;"	v	class:SignupForm
+widget	users/forms.py	/^        widget=forms.TextInput(attrs={'placeholder': 'Last name','class': 'form-control'})$/;"	v	class:SignupForm
+widget	users/forms.py	/^        widget=forms.TextInput(attrs={'placeholder': 'Username','class': 'form-control'})$/;"	v	class:SignupForm
