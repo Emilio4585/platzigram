@@ -1,20 +1,21 @@
 """Posts Views"""
 
+from django.contrib.auth.mixins import LoginRequiredMixin
 # Django
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView
-from django.contrib.auth.mixins import LoginRequiredMixin
-# from django.http import HttpResponse
-
-# Models
-from posts.models import Post
 
 # Forms
 from posts.forms import PostForm
+# Models
+from posts.models import Post
+
+
+# from django.http import HttpResponse
 
 
 # LoginRequired into Views
-class CreatePostView(LoginRequiredMixin, CreateView):
+class CreatePostView_buy(LoginRequiredMixin, CreateView):
     """Create New Post View de Compra"""
     template_name = 'posts/new-buy.html'
     form_class = PostForm
@@ -26,7 +27,9 @@ class CreatePostView(LoginRequiredMixin, CreateView):
         context = super().get_context_data(**kwargs)
         context['profile'] = self.request.user.profile
         return context
-class CreatePostView2(LoginRequiredMixin, CreateView):
+
+
+class CreatePostView_sell(LoginRequiredMixin, CreateView):
     """Create New Post View de Venta"""
     template_name = 'posts/new-sell.html'
     form_class = PostForm

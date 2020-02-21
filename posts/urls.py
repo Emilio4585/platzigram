@@ -1,12 +1,11 @@
 """Posts URLs"""
 
+from django.contrib.auth.decorators import login_required
 # Django
 from django.urls import path
-from django.contrib.auth.decorators import login_required
 
 # Views
 from posts import views
-
 
 urlpatterns = [
     path(
@@ -17,12 +16,12 @@ urlpatterns = [
 
     path(
         route='posts/new/sell',
-        view=views.CreatePostView.as_view(),
+        view=views.CreatePostView_sell.as_view(),
         name='create_post_sell'
     ),
     path(
         route='posts/new/buy',
-        view=views.CreatePostView2.as_view(),
+        view=views.CreatePostView_buy.as_view(),
         name='create_post_buy'
     ),
 

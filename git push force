@@ -1,0 +1,6 @@
+"""Primer Opcion para hacer un git pull forzado"""
+git fetch origin master
+git reset --hard origin/master
+
+"""Otra Opcion para hacer un pull"""
+git clean -f -d
