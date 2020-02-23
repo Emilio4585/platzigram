@@ -7,10 +7,10 @@
 {% block container %}
 	{% if form.errors %}
 		<div class="alert alert-danger alert-dismissible fade show" role="alert">
-			<p>Your username and password didn't match. Please try again.</p>
+			<p>Tu Usuario y contraseña no coinciden. Porfavor Intentalo otra vez.</p>
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-    			<span aria-hidden="true">&times;</span>
-  			</button>
+				<span aria-hidden="true">&times;</span>
+			</button>
 		</div>
 	{% endif %}
 	{% if message %}
@@ -21,17 +21,17 @@
   			</button>
 		</div>
 	{% endif %}
-	<form method="POST" action="{% url 'users:login' %}">
-		{% csrf_token %}
-		<div class="form-group">
-			<input type="text" class="form-control" placeholder="Username" name="username">
-		</div>
-		<div class="form-group">
-			<input type="password" class="form-control" placeholder="Password" name="password">
-		</div>
+<form method="POST" action="{% url 'users:login' %}">
+	{% csrf_token %}
+	<div class="form-group">
+		<input class="form-control" name="username" placeholder="Usuario" type="text">
+	</div>
+	<div class="form-group">
+		<input class="form-control" name="password" placeholder="Contraseña" type="password">
+	</div>
 
-		<button type="submit" class="btn btn-outline-info btn-block mt-5"><i class="lead">Sign in!</i></button>	
-	</form>
+	<button class="btn btn-outline-info btn-block mt-5" type="submit"><i class="lead">Entrar!</i></button>
+</form>
 	<!--div class="mx-auto mt-1" style="width: 300px;">
 		<p>Not registered? <a href="{% url "users:signup" %}">Create an account</a></p>
 	</div-->

@@ -25,7 +25,7 @@ SECRET_KEY = ')p8c2g4laxvl(lg@z-r&6*t3^2@#7(bkrd0szmv&mh%82ea56i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [u'www.bandof.club', u'127.0.0.1']
 
 
 # Application definition
@@ -125,8 +125,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+# Archivos estaticos
 STATIC_URL = '/static/'
-
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
