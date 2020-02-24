@@ -8,6 +8,15 @@
 <div class="alert alert-primary text-md-center" role="alert">
     <strong>Aqui se encontrara la informacion personal de cada usuario y de su empresa</strong>
 </div>
-{% include 'users/card_information.html' %}
+<div class="container-fluid align-content-center">
+  <!-- A fluid container that uses the full witdh -->
+
+
+    <div class="d-flex align-items-sm-center ">
+  <div class="p-2">{% include 'users/card_information.html' %}</div>
+  <div class="p-2">{% include 'users/card_information.html' %}</div>
+</div>
+</div>
+
 
 {% endblock %}
